@@ -2,6 +2,7 @@ import React from 'react'
 import { View, Image, Text } from 'react-native'
 import { ScrollView } from 'react-native-gesture-handler'
 import { Picker } from '@react-native-picker/picker'
+import Icons from '@expo/vector-icons/Entypo'
 
 export default class Home extends React.Component {
     state = {
@@ -10,13 +11,13 @@ export default class Home extends React.Component {
 
     render() {
         return (
-            <ScrollView style={{ backgroundColor: "black" }}>
-                <Text>Debug: Start of Component</Text>
+            <ScrollView style={{ backgroundColor: "#fff" }}>
                 <View style={{
                     flexDirection: "row",
                     alignItems: "center",
                     marginTop: 40,
-                    marginHorizontal: 20
+                    marginHorizontal: 20,
+                    justifyContent: "space-between",
                 }}>
                     <View style={{ width: "10%" }}>
                         <Image
@@ -44,8 +45,10 @@ export default class Home extends React.Component {
                             <Picker.Item label="Bolgatanga" value="Bolgatanga" />
                         </Picker>
                     </View>
+                    <View>
+                        <Icons name="magnifying-glass" size={30} />
+                    </View>
                 </View>
-                <Text>Debug: End of Component</Text>
             </ScrollView>
         )
     }

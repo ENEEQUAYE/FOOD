@@ -5,7 +5,7 @@ import Detail from '../screens/Detail'
 
 const Stack = createStackNavigator();
 const screenOptionStyle ={
-    headerShown:false
+    headerShown: false
 }
 
 const HomeStackNavigator = () => {
